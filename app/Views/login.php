@@ -47,7 +47,7 @@
                                 placeholder="Password">
                         </div>
                         <div class="social-auth-links text-center mb-2">
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </div>
 
                     </div>

@@ -21,7 +21,7 @@ class LoginController extends Controller
         $password = $this->request->getPost('password');
         
         $db = \Config\Database::connect();
-        $user = $db->table('users')->where('email', $email)->get()->getRowArray();
+        $user = $db->table('users')->where('email', $email)->where('deleted_at', null)->get()->getRowArray();
         if ($user) {
             if (password_verify($password, $user['password'])) {
                 // get all user and permissions data and format and then store into session

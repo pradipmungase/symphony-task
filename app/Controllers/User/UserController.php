@@ -15,6 +15,7 @@ class UserController extends Controller
         $db = \Config\Database::connect();
         $data['users'] = $db->table('users')
         ->where('deleted_at', null) 
+        ->where('user_id !=', session()->get('user_data')['user_info']['user_id']) 
         ->get()
         ->getResultArray();
         return view('User/viewAllUser',$data);
