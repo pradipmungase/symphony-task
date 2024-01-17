@@ -118,7 +118,7 @@
 
                         <li class="nav-item">
                             <a href="/logOut" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>
                                     Log Out
                                 </p>
@@ -219,10 +219,7 @@
     <script src="<?= base_url('AdminAssets/plugins/datatables-buttons/js/buttons.html5.min.js') ?>"></script>
     <script src="<?= base_url('AdminAssets/plugins/datatables-buttons/js/buttons.print.min.js') ?>"></script>
     <script src="<?= base_url('AdminAssets/plugins/datatables-buttons/js/buttons.colVis.min.js') ?>"></script>
-
-
     <script src="<?= base_url('AdminAssets/plugins/jquery-validation/jquery.validate.min.js') ?>"></script>
-
     <script src="<?= base_url('AdminAssets/plugins/jquery-validation/additional-methods.min.js') ?>"></script>
 
 
@@ -274,8 +271,6 @@
         });
     });
     </script>
-
-
     <script>
     $(function() {
         $('#quickForm').validate({
@@ -349,5 +344,4 @@
     </script>
 
 </body>
-
 </html>
